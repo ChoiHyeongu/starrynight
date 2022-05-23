@@ -1,0 +1,27 @@
+{
+  "name": "starrynight",
+  "version": "1.0.0",
+  "description": "Discord music bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "discord"
+  ],
+  "author": "Choihyeongu",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^0.27.2",
+    "discord.js": "^13.7.0",
+    "sha3": "^2.1.4",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.34",
+    "ts-node": "^10.7.0"
+  }
+}
