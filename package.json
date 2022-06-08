@@ -2,14 +2,19 @@
   "name": "starrynight",
   "version": "1.0.0",
   "description": "Discord music bot",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec node --loader ts-node/esm ./src/client.ts"
   },
   "keywords": [
     "javascript",
     "typescript",
     "discord"
+  ],
+  "files": [
+    "dist/"
   ],
   "author": "Choihyeongu",
   "license": "ISC",
@@ -17,6 +22,9 @@
     "@types/axios": "^0.14.0",
     "axios": "^0.27.2",
     "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1",
+    "google-auth-library": "^8.0.2",
+    "googleapis": "^101.0.0",
     "sha3": "^2.1.4",
     "typescript": "^4.6.4"
   },
