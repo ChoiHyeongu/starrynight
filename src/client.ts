@@ -1,12 +1,12 @@
 // Require the necessary discord.js classes
 import { Client, CommandInteraction, Intents, Message } from 'discord.js';
-import { command } from './command';
+import Handler from './handler';
 import { config } from './constants';
-
-const PREFIX = ';;';
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+
+const handler = new Handler();
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
@@ -19,7 +19,7 @@ client.on('message', (message) => {
   }
 
   if (isCommand(message.content)) {
-    command.run(message);
+    handler.run(message);
   }
 });
 
