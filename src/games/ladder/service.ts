@@ -1,5 +1,5 @@
 import { Message } from 'discord.js';
-import { randomItem } from '@/utils';
+import { randomItem } from '../../utils';
 
 const MAX_PLAYERS = 8;
 

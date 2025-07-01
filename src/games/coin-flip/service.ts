@@ -1,5 +1,5 @@
 import { Message } from 'discord.js';
-import { randomItem, parsePlayerChoices } from '@/utils';
+import { randomItem, parsePlayerChoices } from '../../utils';
 
 export type Guess = 'heads' | 'tails';
 const MAX_PLAYERS = 2;

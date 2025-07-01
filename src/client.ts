@@ -1,12 +1,12 @@
 import { Client, Intents, Message } from 'discord.js';
-import { DISCORD_TOKEN, PREFIX } from '@/config';
+import { DISCORD_TOKEN, PREFIX } from './config';
 import {
   rockPaperScissorsService,
   ladderService,
   rouletteService,
   coinFlipService,
   diceService,
-} from '@/games';
+} from './games';
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 

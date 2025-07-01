@@ -1,5 +1,5 @@
 import { Message } from 'discord.js';
-import { parsePlayerChoices } from '@/utils';
+import { parsePlayerChoices } from '../../utils';
 
 const choices = ['rock', 'paper', 'scissors'] as const;
 export type Choice = typeof choices[number];
